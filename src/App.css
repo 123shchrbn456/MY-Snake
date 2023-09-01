@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+    padding-top: 50px;
+}
+
+#root {
+    /* padding-top: 300px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.center-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 50px);
+    grid-template-rows: repeat(12, 50px);
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* margin: auto; */
+    grid-gap: 1px;
+}
+
+.box {
+    background-color: darkgray;
+    /* height: calc((100vh - 50px) / 10);
+    max-height: calc((100vw - 40px) / 10); */
+}
+
+.box.snake {
+    background-color: #318b56;
+}
+
+.box.food {
+    background-color: #e243dd;
+}
